@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg;
+  background-image: url('../img/bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $text-color;
+  font-family: $font-family;
+  font-style: italic;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link_hover_color;
+    border-color: $link_hover_color;
+  }
+}
+
+button {
+  outline: 0;
+
+  &:hover {
+    color: $link_hover_color;
+    border-color: $link_hover_color;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.container {
+  width: 1008px;
+  margin: auto;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative i{
+  position: absolute;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}

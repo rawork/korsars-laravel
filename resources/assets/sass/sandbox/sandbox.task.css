@@ -1,0 +1,138 @@
+.relative {
+    position: relative;
+}
+
+.game-task {
+    margin-top: 70px;
+    text-align: center;
+    min-height: 500px;
+}
+
+.game-task h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.game-task button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+
+h2.init-message {
+    margin-top: 160px;
+}
+
+h2.before-message {
+    margin-top: 160px;
+}
+
+h2.end-message {
+    margin-top: 160px;
+}
+
+.game-task .timer {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    width: 100px;
+}
+
+.game-task .description {
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.game-task .conditions {
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.game-task .chests {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.game-task .chests ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.game-task .chests ul li {
+    display: inline-block;
+    width: 16.0%;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.game-task .chests ul li img {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+.game-task .chests ul li span {
+    display: block;
+    font-size: 65px;
+    line-height: 55px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.game-task .form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-task .form input {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 52px;
+    font-size: 20px;
+    border: 2px dotted #fff;
+}
+
+.game-task .form button {
+    font-family: 'ElektraLightPro', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-style: italic;
+    text-transform: none;
+    padding-top: 5px;
+    width: 150px;
+    height: 52px;
+    font-size: 17px;
+    border-radius: 26px;
+    border: 2px solid #fff;
+}
+
+.game-task .form button:hover{
+    border-color: #ad7512;
+}

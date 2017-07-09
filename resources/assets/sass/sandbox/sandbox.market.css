@@ -1,0 +1,138 @@
+.game-market {
+    min-height: 500px;
+    text-align: center;
+}
+
+.game-market h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.game-market button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+h2.init-message {
+    margin-top: 160px;
+}
+
+h2.before-message {
+    margin-top: 160px;
+}
+
+h2.end-message {
+    margin-top: 160px;
+}
+
+
+.game-market .timer {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#answer-timer {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.question {
+    margin: 20px 75px;
+    font-size: 18px;
+}
+
+.answers {
+    margin: 0 75px 20px;
+    text-align: left;
+}
+
+.answers label {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.game-market .account {
+    text-align: center;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.game-market .account span {
+    font-size: 68px;
+}
+
+.game-market .chests {
+    width: 740px;
+    margin: 0 auto;
+}
+
+.game-market .chests ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.game-market .chests ul li {
+    display: inline-block;
+    width: 100px;
+    height: 69px;
+    margin: 14px 16px;
+    cursor: pointer;
+}
+
+.game-market .chests ul li.money, .game-market .chests ul li.skull {
+    cursor: default;
+}
+
+.game-market .chests ul li.chest {
+    background: url('../img/market/chest.png') bottom center no-repeat;
+}
+
+.game-market .chests ul li.skull {
+    background: url('../img/market/skull.png') bottom center no-repeat;
+}
+
+.game-market .chests ul li.money {
+    background: url('../img/market/money.png') bottom center no-repeat;
+}
+
+li#chest1, li#chest11, li#chest21 {
+    margin-left: 0;
+}
+
+li#chest6, li#chest16 {
+    margin-left: 87px;
+}
+
+li#chest5, li#chest15 {
+    margin-right: 87px;
+}
+
+li#chest10, li#chest20 {
+    margin-right: 0;
+}

@@ -1,0 +1,760 @@
+.game-battle {
+    /*text-align: center;*/
+    min-height: 600px;
+    margin: 0 -40px;
+}
+
+.game-battle .timer {
+    text-align: center;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 30px;
+    left: 360px;
+}
+
+.game-battle button#btn-reload {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+.game-battle .chat {
+    position: absolute;
+    width: 490px;
+    top: 20px;
+    right: 0;
+}
+
+.game-battle .battlefield {
+    position: absolute;
+    width: 336px;
+    height: 347px;
+    top: 118px;
+    left: 220px;
+    background-image: url('../img/battle/field.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.game-battle .gamer {
+    width: 130px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 10px;
+}
+
+.game-battle .gamer .info {
+    position: relative;
+    float: right;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.game-battle .gamer img.flag {
+    max-width: 115px;
+    display: block;
+    margin: 10px auto;
+}
+
+.game-battle .gamer .name {
+    text-align: center;
+    padding: 0 5px;
+
+}
+
+.game-battle .arrow {
+    position: absolute;
+    left: 146px;
+}
+
+.game-battle .mark-red {
+    position: absolute;
+    width: 39px;
+    height: 40px;
+    top: 30px;
+    left: 0;
+    background-image: url('../img/battle/gamer_red.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.game-battle .mark-green {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 225px;
+    left: 0;
+    background-image: url('../img/battle/gamer_green.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.game-battle .mark-brown {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 415px;
+    left: 0;
+    background-image: url('../img/battle/gamer_brown.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.game-battle .arrow1 {
+    width: 74px;
+    height: 238px;
+    top: 80px;
+    background-image: url('../img/battle/arrow1.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.game-battle .arrow2 {
+    display: none;
+    width: 71px;
+    height: 52px;
+    top: 270px;
+    background-image: url('../img/battle/arrow2.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.game-battle .arrow3 {
+    display: none;
+    width: 77px;
+    height: 239px;
+    top: 300px;
+    background-image: url('../img/battle/arrow3.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.game-battle .gamer1 {
+    top: 15px;
+}
+
+.game-battle .gamer2 {
+    top: 210px;
+}
+
+.game-battle .gamer3 {
+    top: 400px;
+}
+
+.game-battle .cell {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid #ffff00;*/
+    z-index: 10;
+}
+
+.game-battle .cell:hover {
+    background-image: url('../img/battle/aim.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.game-battle .cell1A {
+    top: 152px;
+    left: 244px;
+}
+
+.game-battle .cell1B {
+    top: 152px;
+    left: 275px;
+}
+
+.game-battle .cell1C {
+    top: 152px;
+    left: 306px;
+}
+
+.game-battle .cell1D {
+    top: 152px;
+    left: 337px;
+}
+
+.game-battle .cell1E {
+    top: 152px;
+    left: 368px;
+}
+
+.game-battle .cell1F {
+    top: 152px;
+    left: 399px;
+}
+
+.game-battle .cell1G {
+    top: 152px;
+    left: 430px;
+}
+
+.game-battle .cell1H {
+    top: 152px;
+    left: 461px;
+}
+
+.game-battle .cell1I {
+    top: 152px;
+    left: 492px;
+}
+
+.game-battle .cell1J {
+    top: 152px;
+    left: 523px;
+}
+
+
+.game-battle .cell2A {
+    top: 183px;
+    left: 244px;
+}
+
+.game-battle .cell2B {
+    top: 183px;
+    left: 275px;
+}
+
+.game-battle .cell2C {
+    top: 183px;
+    left: 306px;
+}
+
+.game-battle .cell2D {
+    top: 183px;
+    left: 337px;
+}
+
+.game-battle .cell2E {
+    top: 183px;
+    left: 368px;
+}
+
+.game-battle .cell2F {
+    top: 183px;
+    left: 399px;
+}
+
+.game-battle .cell2G {
+    top: 183px;
+    left: 430px;
+}
+
+.game-battle .cell2H {
+    top: 183px;
+    left: 461px;
+}
+
+.game-battle .cell2I {
+    top: 183px;
+    left: 492px;
+}
+
+.game-battle .cell2J {
+    top: 183px;
+    left: 523px;
+}
+
+
+.game-battle .cell3A {
+    top: 214px;
+    left: 244px;
+}
+
+.game-battle .cell3B {
+    top: 214px;
+    left: 275px;
+}
+
+.game-battle .cell3C {
+    top: 214px;
+    left: 306px;
+}
+
+.game-battle .cell3D {
+    top: 214px;
+    left: 337px;
+}
+
+.game-battle .cell3E {
+    top: 214px;
+    left: 368px;
+}
+
+.game-battle .cell3F {
+    top: 214px;
+    left: 399px;
+}
+
+.game-battle .cell3G {
+    top: 214px;
+    left: 430px;
+}
+
+.game-battle .cell3H {
+    top: 214px;
+    left: 461px;
+}
+
+.game-battle .cell3I {
+    top: 214px;
+    left: 492px;
+}
+
+.game-battle .cell3J {
+    top: 214px;
+    left: 523px;
+}
+
+
+.game-battle .cell4A {
+    top: 245px;
+    left: 244px;
+}
+
+.game-battle .cell4B {
+    top: 245px;
+    left: 275px;
+}
+
+.game-battle .cell4C {
+    top: 245px;
+    left: 306px;
+}
+
+.game-battle .cell4D {
+    top: 245px;
+    left: 337px;
+}
+
+.game-battle .cell4E {
+    top: 245px;
+    left: 368px;
+}
+
+.game-battle .cell4F {
+    top: 245px;
+    left: 399px;
+}
+
+.game-battle .cell4G {
+    top: 245px;
+    left: 430px;
+}
+
+.game-battle .cell4H {
+    top: 245px;
+    left: 461px;
+}
+
+.game-battle .cell4I {
+    top: 245px;
+    left: 492px;
+}
+
+.game-battle .cell4J {
+    top: 245px;
+    left: 523px;
+}
+
+
+.game-battle .cell5A {
+    top: 276px;
+    left: 244px;
+}
+
+.game-battle .cell5B {
+    top: 276px;
+    left: 275px;
+}
+
+.game-battle .cell5C {
+    top: 276px;
+    left: 306px;
+}
+
+.game-battle .cell5D {
+    top: 276px;
+    left: 337px;
+}
+
+.game-battle .cell5E {
+    top: 276px;
+    left: 368px;
+}
+
+.game-battle .cell5F {
+    top: 276px;
+    left: 399px;
+}
+
+.game-battle .cell5G {
+    top: 276px;
+    left: 430px;
+}
+
+.game-battle .cell5H {
+    top: 276px;
+    left: 461px;
+}
+
+.game-battle .cell5I {
+    top: 276px;
+    left: 492px;
+}
+
+.game-battle .cell5J {
+    top: 276px;
+    left: 523px;
+}
+
+
+.game-battle .cell6A {
+    top: 307px;
+    left: 244px;
+}
+
+.game-battle .cell6B {
+    top: 307px;
+    left: 275px;
+}
+
+.game-battle .cell6C {
+    top: 307px;
+    left: 306px;
+}
+
+.game-battle .cell6D {
+    top: 307px;
+    left: 337px;
+}
+
+.game-battle .cell6E {
+    top: 307px;
+    left: 368px;
+}
+
+.game-battle .cell6F {
+    top: 307px;
+    left: 399px;
+}
+
+.game-battle .cell6G {
+    top: 307px;
+    left: 430px;
+}
+
+.game-battle .cell6H {
+    top: 307px;
+    left: 461px;
+}
+
+.game-battle .cell6I {
+    top: 307px;
+    left: 492px;
+}
+
+.game-battle .cell6J {
+    top: 307px;
+    left: 523px;
+}
+
+
+.game-battle .cell7A {
+    top: 338px;
+    left: 244px;
+}
+
+.game-battle .cell7B {
+    top: 338px;
+    left: 275px;
+}
+
+.game-battle .cell7C {
+    top: 338px;
+    left: 306px;
+}
+
+.game-battle .cell7D {
+    top: 338px;
+    left: 337px;
+}
+
+.game-battle .cell7E {
+    top: 338px;
+    left: 368px;
+}
+
+.game-battle .cell7F {
+    top: 338px;
+    left: 399px;
+}
+
+.game-battle .cell7G {
+    top: 338px;
+    left: 430px;
+}
+
+.game-battle .cell7H {
+    top: 338px;
+    left: 461px;
+}
+
+.game-battle .cell7I {
+    top: 338px;
+    left: 492px;
+}
+
+.game-battle .cell7J {
+    top: 338px;
+    left: 523px;
+}
+
+
+.game-battle .cell8A {
+    top: 369px;
+    left: 244px;
+}
+
+.game-battle .cell8B {
+    top: 369px;
+    left: 275px;
+}
+
+.game-battle .cell8C {
+    top: 369px;
+    left: 306px;
+}
+
+.game-battle .cell8D {
+    top: 369px;
+    left: 337px;
+}
+
+.game-battle .cell8E {
+    top: 369px;
+    left: 368px;
+}
+
+.game-battle .cell8F {
+    top: 369px;
+    left: 399px;
+}
+
+.game-battle .cell8G {
+    top: 369px;
+    left: 430px;
+}
+
+.game-battle .cell8H {
+    top: 369px;
+    left: 461px;
+}
+
+.game-battle .cell8I {
+    top: 369px;
+    left: 492px;
+}
+
+.game-battle .cell8J {
+    top: 369px;
+    left: 523px;
+}
+
+
+.game-battle .cell9A {
+    top: 400px;
+    left: 244px;
+}
+
+.game-battle .cell9B {
+    top: 400px;
+    left: 275px;
+}
+
+.game-battle .cell9C {
+    top: 400px;
+    left: 306px;
+}
+
+.game-battle .cell9D {
+    top: 400px;
+    left: 337px;
+}
+
+.game-battle .cell9E {
+    top: 400px;
+    left: 368px;
+}
+
+.game-battle .cell9F {
+    top: 400px;
+    left: 399px;
+}
+
+.game-battle .cell9G {
+    top: 400px;
+    left: 430px;
+}
+
+.game-battle .cell9H {
+    top: 400px;
+    left: 461px;
+}
+
+.game-battle .cell9I {
+    top: 400px;
+    left: 492px;
+}
+
+.game-battle .cell9J {
+    top: 400px;
+    left: 523px;
+}
+
+
+.game-battle .cell10A {
+    top: 431px;
+    left: 244px;
+}
+
+.game-battle .cell10B {
+    top: 431px;
+    left: 275px;
+}
+
+.game-battle .cell10C {
+    top: 431px;
+    left: 306px;
+}
+
+.game-battle .cell10D {
+    top: 431px;
+    left: 337px;
+}
+
+.game-battle .cell10E {
+    top: 431px;
+    left: 368px;
+}
+
+.game-battle .cell10F {
+    top: 431px;
+    left: 399px;
+}
+
+.game-battle .cell10G {
+    top: 431px;
+    left: 430px;
+}
+
+.game-battle .cell10H {
+    top: 431px;
+    left: 461px;
+}
+
+.game-battle .cell10I {
+    top: 431px;
+    left: 492px;
+}
+
+.game-battle .cell10J {
+    top: 431px;
+    left: 523px;
+}
+
+.game-battle .ship-red {
+    background-image: url('../img/battle/ship_red.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .ship-red-killed {
+    background-image: url('../img/battle/ship_red_killed.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .ship-green {
+    background-image: url('../img/battle/ship_green.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .ship-green-killed {
+    background-image: url('../img/battle/ship_green_killed.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .ship-brown {
+    background-image: url('../img/battle/ship_brown.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .ship-brown-killed {
+    background-image: url('../img/battle/ship_brown_killed.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .cell-empty {
+    background-image: url('../img/battle/empty.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .imperial-part {
+    background-color: rgba(0,0,0,0.75);
+    background-image: url('../img/battle/empty.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.game-battle .imperial-h {
+    background-image: url("../img/battle/imperial_killed_h.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 92px;
+    height: 30px;
+    z-index: 11;
+    top: 369px;
+    left: 368px;
+}
+
+.game-battle .imperial-v {
+    background-image: url("../img/battle/imperial_killed_v.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 92px;
+    z-index: 11;
+    top: 276px;
+    left: 492px;
+}
+

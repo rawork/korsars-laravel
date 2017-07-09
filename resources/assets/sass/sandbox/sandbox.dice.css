@@ -1,0 +1,226 @@
+.game-dice {
+    text-align: center;
+    min-height: 500px;
+}
+
+.game-dice .dice-bankomet {
+    width: 300px;
+    float: left;
+}
+
+.game-dice .dice-bankomet .bankomet {
+    background: url('../img/bg_ava.png') top center no-repeat;
+    min-height: 400px;
+    text-align: center;
+}
+
+.game-dice .dice-bankomet .bankomet img {
+    margin-top: 29px;
+    width: 256px;
+    height: 256px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 128px;
+}
+
+.game-dice .dice-gamer {
+    width: 300px;
+    float: right;
+}
+
+.game-dice .dice-gamer .gamer {
+    background: url('../img/bg_ava.png') top center no-repeat;
+    min-height: 400px;
+    text-align: center;
+}
+
+.game-dice .dice-gamer .gamer img {
+    margin-top: 29px;
+    width: 256px;
+    height: 256px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 128px;
+}
+
+.game-dice .dice-field {
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+}
+
+.game-dice h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.game-dice h1 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 73px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 73px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.game-dice .description {
+    padding: 20px 20px 50px;
+    line-height: 18px;
+}
+
+.game-dice button.dice-button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    border: 2px solid #fff;
+    width: 212px;
+    height: 70px;
+    padding-top: 10px;
+    border-radius: 35px;
+    text-transform: uppercase;
+}
+
+.game-dice button.dice-button:hover {
+    border-color: #ad7512;
+}
+
+.game-dice .title {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+.game-dice .bet {
+    line-height: 18px;
+    font-size: 14px;
+    display: none;
+}
+
+.game-dice .purse {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.game-dice .dice {
+    width: 64px;
+    height: 64px;
+    background: url("../img/dice/dices.png") 64px 0 no-repeat;
+}
+
+.game-dice .dice1 {
+    background-position: -128px 0;
+}
+
+.game-dice .dice2 {
+    background-position: -64px -64px;
+}
+
+.game-dice .dice3 {
+    background-position: -64px 0;
+}
+
+.game-dice .dice4 {
+    background-position: 0 -64px;
+}
+
+.game-dice .dice5 {
+    background-position: -128px -64px;
+}
+
+.game-dice .dice6 {
+    background-position: 0 0;
+}
+
+.game-dice #field-dice1 {
+    top: 40px;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.game-dice #field-dice2 {
+    top: 140px;
+    left: 50%;
+    margin-left: -136px;
+}
+
+.game-dice #field-dice3 {
+    top: 140px;
+    left: 50%;
+    margin-left: 72px;
+}
+
+.game-dice #gamer-dice1 {
+    top: 20px;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.game-dice #gamer-dice2 {
+    top: 20px;
+    left: 50%;
+    margin-left: -116px;
+}
+
+.game-dice #gamer-dice3 {
+    top: 20px;
+    left: 50%;
+    margin-left: 52px;
+}
+
+
+.game-dice #dices {
+    height: 240px;
+    display: none;
+}
+
+.game-dice #gamer-dices {
+    display: none;
+}
+
+.game-dice #dice-glass {
+    margin-top: -80px;
+    display: none;
+}
+
+.game-dice #dice-message {
+    min-height: 100px;
+}
+
+.game-dice #dice-btn-exit{
+    margin-top: 50px;
+    display: none;
+}
+.game-dice #dice-btn-play{
+    display: none;
+}
+.game-dice #dice-btn-move{
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    border: 2px solid #fff;
+    width: 262px;
+    height: 90px;
+    padding-top: 10px;
+    border-radius: 45px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.game-dice #dice-btn-move:hover{
+    border-color: #ad7512;
+}
+
+
+
+
+
+

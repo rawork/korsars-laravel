@@ -1,0 +1,342 @@
+.game-pexeso {
+    text-align: center;
+    width: 900px;
+    min-height: 470px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.game-pexeso h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+
+.game-pexeso button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+.game-pexeso .info {
+    text-align: center;
+    float: left;
+    width: 300px;
+}
+
+.game-pexeso .field {
+    float: right;
+    width: 600px;
+    overflow: hidden;
+}
+
+.game-pexeso .field ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.game-pexeso .field ul li {
+    margin: 2px;
+    display: inline-block;
+    width: 86px;
+    height: 88px;
+    border: 2px dashed #fff;
+    border-radius: 4px;
+    background: url('../img/pexeso/skull.png') center center no-repeat;
+}
+
+.game-pexeso .field ul li.bullet1 {
+    background-image: url('../img/pexeso/bullet1.png');
+}
+.game-pexeso .field ul li.bullet2 {
+    background-image: url('../img/pexeso/bullet2.png');
+}
+.game-pexeso .field ul li.bullet3 {
+    background-image: url('../img/pexeso/bullet3.png');
+}
+
+.game-pexeso .field ul li.bullet1 {
+    background-image: url('../img/pexeso/bullet1.png');
+}
+.game-pexeso .field ul li.bullet2 {
+    background-image: url('../img/pexeso/bullet2.png');
+}
+.game-pexeso .field ul li.bullet3 {
+    background-image: url('../img/pexeso/bullet3.png');
+}
+
+.game-pexeso .field ul li.food1 {
+    background-image: url('../img/pexeso/food1.png');
+}
+.game-pexeso .field ul li.food2 {
+    background-image: url('../img/pexeso/food2.png');
+}
+.game-pexeso .field ul li.food3 {
+    background-image: url('../img/pexeso/food3.png');
+}
+
+.game-pexeso .field ul li.medicine1 {
+    background-image: url('../img/pexeso/medicine1.png');
+}
+.game-pexeso .field ul li.medicine2 {
+    background-image: url('../img/pexeso/medicine2.png');
+}
+.game-pexeso .field ul li.medicine3 {
+    background-image: url('../img/pexeso/medicine3.png');
+}
+
+.game-pexeso .field ul li.tool1 {
+    background-image: url('../img/pexeso/tool1.png');
+}
+.game-pexeso .field ul li.tool2 {
+    background-image: url('../img/pexeso/tool2.png');
+}
+.game-pexeso .field ul li.tool3 {
+    background-image: url('../img/pexeso/tool3.png');
+}
+
+.game-pexeso .field ul li.weapon1 {
+    background-image: url('../img/pexeso/weapon1.png');
+}
+.game-pexeso .field ul li.weapon2 {
+    background-image: url('../img/pexeso/weapon2.png');
+}
+.game-pexeso .field ul li.weapon3 {
+    background-image: url('../img/pexeso/weapon3.png');
+}
+
+.game-pexeso .field ul li.opened {
+    background: none;
+}
+
+.game-pexeso h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.game-pexeso .init-message {
+    margin-top: 100px;
+}
+
+.game-pexeso .end-message {
+    margin-top: 100px;
+}
+
+h1.step-end-message {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.game-pexeso button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+.game-pexeso .timer {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 72px;
+    line-height: 72px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.game-pexeso .step {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.game-pexeso .step span {
+
+}
+
+.game-pexeso .account {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: none;
+}
+
+.game-pexeso .description {
+    margin: 0;
+}
+
+.game-pexeso ul.elements {
+    text-align: left;
+    list-style: none;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+}
+
+.game-pexeso ul.elements li {
+    margin-top: 15px;
+    padding-left: 80px;
+    height: 60px;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.game-pexeso ul.elements li.bullet1 {
+    background-image: url('../img/pexeso/bullet1.png');
+}
+.game-pexeso ul.elements li.bullet2 {
+    background-image: url('../img/pexeso/bullet2.png');
+}
+.game-pexeso ul.elements li.bullet3 {
+    background-image: url('../img/pexeso/bullet3.png');
+}
+
+.game-pexeso ul.elements li.food1 {
+    background-image: url('../img/pexeso/food1.png');
+}
+.game-pexeso ul.elements li.food2 {
+    background-image: url('../img/pexeso/food2.png');
+}
+.game-pexeso ul.elements li.food3 {
+    background-image: url('../img/pexeso/food3.png');
+}
+
+.game-pexeso ul.elements li.medicine1 {
+    background-image: url('../img/pexeso/medicine1.png');
+}
+.game-pexeso ul.elements li.medicine2 {
+    background-image: url('../img/pexeso/medicine2.png');
+}
+.game-pexeso ul.elements li.medicine3 {
+    background-image: url('../img/pexeso/medicine3.png');
+}
+
+.game-pexeso ul.elements li.tool1 {
+    background-image: url('../img/pexeso/tool1.png');
+}
+.game-pexeso ul.elements li.tool2 {
+    background-image: url('../img/pexeso/tool2.png');
+}
+.game-pexeso ul.elements li.tool3 {
+    background-image: url('../img/pexeso/tool3.png');
+}
+
+.game-pexeso ul.elements li.weapon1 {
+    background-image: url('../img/pexeso/weapon1.png');
+}
+.game-pexeso ul.elements li.weapon2 {
+    background-image: url('../img/pexeso/weapon2.png');
+}
+.game-pexeso ul.elements li.weapon3 {
+    background-image: url('../img/pexeso/weapon3.png');
+}
+
+.game-pexeso .field ul li.custom1 {
+    background-image: url('../img/pexeso/custom1.png');
+}
+.game-pexeso .field ul li.custom2 {
+    background-image: url('../img/pexeso/custom2.png');
+}
+.game-pexeso .field ul li.custom3 {
+    background-image: url('../img/pexeso/custom3.png');
+}
+.game-pexeso .field ul li.custom4 {
+    background-image: url('../img/pexeso/custom4.png');
+}
+.game-pexeso .field ul li.custom5 {
+    background-image: url('../img/pexeso/custom5.png');
+}
+.game-pexeso .field ul li.custom6 {
+    background-image: url('../img/pexeso/custom6.png');
+}
+.game-pexeso .field ul li.custom7 {
+    background-image: url('../img/pexeso/custom7.png');
+}
+.game-pexeso .field ul li.custom8 {
+    background-image: url('../img/pexeso/custom8.png');
+}
+.game-pexeso .field ul li.custom9 {
+    background-image: url('../img/pexeso/custom9.png');
+}
+.game-pexeso .field ul li.custom10 {
+    background-image: url('../img/pexeso/custom10.png');
+}
+.game-pexeso .field ul li.custom11 {
+    background-image: url('../img/pexeso/custom11.png');
+}
+.game-pexeso .field ul li.custom12 {
+    background-image: url('../img/pexeso/custom12.png');
+}
+.game-pexeso .field ul li.custom13 {
+    background-image: url('../img/pexeso/custom13.png');
+}
+.game-pexeso .field ul li.custom14 {
+    background-image: url('../img/pexeso/custom14.png');
+}
+.game-pexeso .field ul li.custom15 {
+    background-image: url('../img/pexeso/custom15.png');
+}
+.game-pexeso .field ul li.custom16 {
+    background-image: url('../img/pexeso/custom16.png');
+}
+.game-pexeso .field ul li.custom17 {
+    background-image: url('../img/pexeso/custom17.png');
+}
+.game-pexeso .field ul li.custom18 {
+    background-image: url('../img/pexeso/custom18.png');
+}
+
+#pexeso-field.active li {
+    cursor: pointer;
+}
+
+#pexeso-btn-start {
+    margin-top: 60px;
+}
+
+
+
+

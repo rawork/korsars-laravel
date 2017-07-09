@@ -1,0 +1,203 @@
+.game-map {
+    text-align: center;
+    min-height: 600px;
+}
+
+h2.init-message {
+    margin-top: 160px;
+}
+
+h2.before-message {
+    margin-top: 160px;
+}
+
+h2.end-message {
+    margin-top: 160px;
+}
+
+.game-map h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+
+.game-map button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+.game-map .map {
+    float: left;
+    width: 740px;
+    height: 567px;
+    background: url('../img/map/map.png') top left no-repeat;
+}
+
+.game-map .info {
+    float: right;
+    width: 268px;
+    padding: 0 20px;
+}
+
+.game-map #map-hint {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 300px;
+}
+
+.game-map #map-hint .title {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 33px;
+    line-height: 33px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.game-map #map-hint .text {
+    font-size: 14px;
+}
+
+.game-map .info button {
+    width: 235px;
+    border: 2px solid #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 17px;
+    font-family: 'ElektraLightPro', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-style: italic;
+    text-transform: none;
+}
+
+.game-map #map-btn-task {
+    height: 70px;
+    border-radius: 35px;
+}
+
+.game-map #map-btn-task:hover {
+    border-color: #ad7512;
+}
+
+.game-map #map-btn-ready {
+    height: 92px;
+    border-radius: 46px;
+}
+
+.game-map #map-btn-ready:hover {
+    border-color: #ad7512;
+}
+
+.game-map .map .matrix {
+    position: absolute;
+    top: 32px;
+    left: 45px;
+    width: 691px;
+    height: 532px;
+}
+
+.game-map .map .matrix ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#modal-content .map-timer {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 56px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.game-map .map .matrix ul li {
+    display: inline-block;
+    float: left;
+    width: 45px;
+    height: 37px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    /*border: 1px solid #00f;*/
+    cursor: pointer;
+}
+
+.game-map .map .matrix ul.ready li:hover, .game-map .map .matrix ul li.active{
+    background: url('../img/map/mark.png') top left no-repeat;
+}
+
+.modal-dialog {
+    border: 1px dotted #fff;
+}
+
+#modal-content h1 {
+    margin-bottom: 60px;
+    margin-top: 80px;
+    font-size: 57px;
+    line-height: 57px;
+}
+
+#modal-content h2 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#modal-content h4 {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#modal-content-fixed {
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    margin: 20px;
+}
+
+#map-btn-yes, #map-btn-no {
+    width: 140px;
+}
+
+#map-btn-no {
+    margin-right: 30px;
+}

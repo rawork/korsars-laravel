@@ -1,0 +1,2221 @@
+.game-labirint {
+    text-align: center;
+    min-height: 600px;
+}
+
+.game-labirint div.relative>div{
+    position: absolute;
+}
+
+
+.game-labirint #timer {
+    top: 0px;
+    left: 325px;
+    width: 300px;
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.game-labirint button {
+    font-family: 'Beryozki', Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+    border-radius: 45px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+.game-labirint #ship-map {
+    top: 0;
+    left: 0;
+    width: 1086px;
+    height: 554px;
+    background: url('../img/labirint/ship.png') top left no-repeat;
+}
+
+.game-labirint .info {
+    width: 300px;
+    font-size: 17px;
+}
+
+.game-labirint .help {
+    top: 0;
+    left: 50%;
+    margin-left: 50px;
+    width: 300px;
+    font-size: 17px;
+}
+
+.game-labirint .info .message {
+    font-size: 14px;
+    padding-top: 20px;
+    /*display: none;*/
+}
+
+.game-labirint .info button {
+    width: 180px;
+    border: 2px solid #fff;
+    padding: 20px;
+    font-size: 17px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.game-labirint .info button:hover {
+    border-color: #ad7512;
+}
+
+/*.dice {*/
+    /*margin-left: 115px;*/
+    /*width: 64px;*/
+    /*height: 64px;*/
+    /*background: url("../img/dice/dices.png") 64px 0 no-repeat;*/
+    /*!*display: none;*!*/
+/*}*/
+
+/*.dice.dice1 {*/
+    /*top: 0;*/
+    /*left: -400px;*/
+    /*background-position: -128px 0;*/
+/*}*/
+
+/*.dice.dice2 {*/
+    /*top: 0;*/
+    /*left: -320px;*/
+    /*background-position: -64px -64px;*/
+/*}*/
+
+/*.dice.dice3 {*/
+    /*top: 0;*/
+    /*left: -240px;*/
+    /*background-position: -64px 0;*/
+/*}*/
+
+/*.dice.dice4 {*/
+    /*top: 80px;*/
+    /*left: -400px;*/
+    /*background-position: 0 -64px;*/
+/*}*/
+
+/*.dice.dice5 {*/
+    /*top: 80px;*/
+    /*left: -320px;*/
+    /*background-position: -128px -64px;*/
+/*}*/
+
+/*.dice.dice6 {*/
+    /*top: 80px;*/
+    /*left: -240px;*/
+    /*background-position: 0 0;*/
+/*}*/
+
+/* move cells */
+
+.game-labirint .step {
+    display: block;
+}
+
+.game-labirint .step.active {
+    display: block;
+}
+
+#step7 {
+    top: 345px;
+    left: 470px;
+    width: 89px;
+    height: 137px;
+    background: url('../img/labirint/7.png') top left no-repeat;
+}
+
+#step11 {
+    top: 485px;
+    left: 235px;
+    width: 107px;
+    height: 63px;
+    background: url('../img/labirint/11.png') top left no-repeat;
+}
+
+#step15 {
+    top: 395px;
+    left: 65px;
+    width: 384px;
+    height: 89px;
+    background: url('../img/labirint/15.png') top left no-repeat;
+}
+
+#step24 {
+    top: 390px;
+    left: 225px;
+    width: 422px;
+    height: 72px;
+    background: url('../img/labirint/24.png') top left no-repeat;
+}
+
+#step27 {
+    top: 380px;
+    left: 110px;
+    width: 714px;
+    height: 101px;
+    background: url('../img/labirint/27.png') top left no-repeat;
+}
+
+#step29 {
+    top: 335px;
+    left: 40px;
+    width: 938px;
+    height: 239px;
+    background: url('../img/labirint/29.png') top left no-repeat;
+}
+
+#step30 {
+    top: 300px;
+    left: 825px;
+    width: 37px;
+    height: 55px;
+    background: url('../img/labirint/30.png') top left no-repeat;
+}
+
+#step33 {
+    top: 295px;
+    left: 655px;
+    width: 94px;
+    height: 72px;
+    background: url('../img/labirint/33.png') top left no-repeat;
+}
+
+#step36 {
+    top: 293px;
+    left: 419px;
+    width: 89px;
+    height: 72px;
+    background: url('../img/labirint/36.png') top left no-repeat;
+}
+
+#step41 {
+    top: 345px;
+    left: 190px;
+    width: 679px;
+    height: 142px;
+    background: url('../img/labirint/41.png') top left no-repeat;
+}
+
+#step46 {
+    top: 290px;
+    left: 200px;
+    width: 181px;
+    height: 94px;
+    background: url('../img/labirint/46.png') top left no-repeat;
+}
+
+#step58 {
+    top: 280px;
+    left: 710px;
+    width: 209px;
+    height: 148px;
+    background: url('../img/labirint/58.png') top left no-repeat;
+}
+
+#step61 {
+    top: 225px;
+    left: 590px;
+    width: 212px;
+    height: 78px;
+    background: url('../img/labirint/61.png') top left no-repeat;
+}
+
+#step65 {
+    top: 212px;
+    left: 510px;
+    width: 375px;
+    height: 104px;
+    background: url('../img/labirint/65.png') top left no-repeat;
+}
+#step69 {
+    top: 222px;
+    left: 170px;
+    width: 174px;
+    height: 81px;
+    background: url('../img/labirint/69.png') top left no-repeat;
+}
+#step72 {
+    top: 218px;
+    left: 110px;
+    width: 466px;
+    height: 104px;
+    background: url('../img/labirint/72.png') top left no-repeat;
+}
+
+#step75 {
+    top: 125px;
+    left: 150px;
+    width: 181px;
+    height: 85px;
+    background: url('../img/labirint/75.png') top left no-repeat;
+}
+#step80 {
+    top: 130px;
+    left: 425px;
+    width: 77px;
+    height: 55px;
+    background: url('../img/labirint/80.png') top left no-repeat;
+}
+#step82 {
+    top: 170px;
+    left: 370px;
+    width: 199px;
+    height: 87px;
+    background: url('../img/labirint/82.png') top left no-repeat;
+}
+
+#step84 {
+    top: 120px;
+    left: 645px;
+    width: 290px;
+    height: 93px;
+    background: url('../img/labirint/84.png') top left no-repeat;
+}
+#step87 {
+    top: 165px;
+    left: 200px;
+    width: 658px;
+    height: 96px;
+    background: url('../img/labirint/87.png') top left no-repeat;
+}
+#step94 {
+    top: 120px;
+    left: 600px;
+    width: 212px;
+    height: 74px;
+    background: url('../img/labirint/94.png') top left no-repeat;
+}
+
+#step98 {
+    top: 25px;
+    left: 440px;
+    width: 365px;
+    height: 238px;
+    background: url('../img/labirint/98.png') top left no-repeat;
+}
+
+/* prize cells */
+.time {
+    width: 32px;
+    height: 38px;
+    background: url('../img/labirint/time.png') top left no-repeat;
+}
+
+.death {
+    width: 34px;
+    height: 29px;
+    background: url('../img/labirint/death.png') top left no-repeat;
+}
+
+.money {
+    width: 41px;
+    height: 33px;
+    background: url('../img/labirint/money.png') top left no-repeat;
+}
+
+.coffee {
+    width: 38px;
+    height: 33px;
+    background: url('../img/labirint/coffee.png') top left no-repeat;
+}
+
+.chest {
+    width: 53px;
+    height: 37px;
+    background: url('../img/labirint/chest.png') top left no-repeat;
+}
+
+.rom {
+    width: 35px;
+    height: 31px;
+    background: url('../img/labirint/rom.png') top left no-repeat;
+}
+
+#step5 {
+    top: 500px;
+    left: 595px;
+}
+#step8 {
+    top: 500px;
+    left: 415px;
+}
+#step9 {
+    top: 496px;
+    left: 362px;
+}
+#step14 {
+    top: 462px;
+    left: 40px;
+}
+#step19 {
+    top: 405px;
+    left: 285px;
+}
+#step23 {
+    top: 410px;
+    left: 515px;
+}
+#step38 {
+    top: 355px;
+    left: 328px;
+}
+#step40 {
+    top: 353px;
+    left: 230px;
+}
+#step42 {
+    top: 355px;
+    left: 135px;
+}
+#step44 {
+    top: 280px;
+    left: 70px;
+}
+#step45 {
+    top: 295px;
+    left: 105px;
+}
+#step49 {
+    top: 295px;
+    left: 350px;
+}
+#step51 {
+    top: 265px;
+    left: 492px;
+}
+#step54 {
+    top: 303px;
+    left: 672px;
+}
+#step59 {
+    top: 220px;
+    left: 913px;
+}
+#step63 {
+    top: 213px;
+    left: 635px;
+}
+#step70 {
+    top: 235px;
+    left: 255px;
+}
+#step74 {
+    top: 160px;
+    left: 80px;
+}
+#step83 {
+    top: 185px;
+    left: 568px;
+}
+#step85 {
+    top: 195px;
+    left: 715px;
+}
+#step86 {
+    top: 159px;
+    left: 777px;
+}
+#step90 {
+    top: 125px;
+    left: 845px;
+}
+#step95 {
+    top: 85px;
+    left: 566px;
+}
+#step96 {
+    top: 85px;
+    left: 635px;
+}
+#step97 {
+    top: 68px;
+    left: 688px;
+}
+
+/* markers */
+
+.game-labirint #marker1 {
+    width: 36px;
+    height: 49px;
+    background: url('../img/labirint/marker1.png') top left no-repeat;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.game-labirint #marker2 {
+    width: 36px;
+    height: 49px;
+    background: url('../img/labirint/marker2.png') top left no-repeat;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.game-labirint #marker3 {
+    width: 36px;
+    height: 49px;
+    background: url('../img/labirint/marker3.png') top left no-repeat;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.game-labirint #marker4 {
+    width: 36px;
+    height: 49px;
+    background: url('../img/labirint/marker4.png') top left no-repeat;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.game-labirint #marker1.cell0 {
+    top: 400px;
+    left: 920px;
+}
+
+.game-labirint #marker2.cell0 {
+    top: 420px;
+    left: 920px;
+}
+
+.game-labirint #marker3.cell0 {
+    top: 400px;
+    left: 970px;
+}
+
+.game-labirint #marker4.cell0 {
+    top: 420px;
+    left: 970px;
+}
+
+.game-labirint #marker1.cell100 {
+    top: 5px;
+    left: 930px;
+}
+.game-labirint #marker2.cell100 {
+    top: 15px;
+    left: 930px;
+}
+.game-labirint #marker3.cell100 {
+    top: 25px;
+    left: 930px;
+}
+.game-labirint #marker4.cell100 {
+    top: 35px;
+    left: 930px;
+}
+
+.game-labirint #marker1.cell1 {
+    top: 380px;
+    left: 870px;
+}
+.game-labirint #marker2.cell1 {
+    top: 390px;
+    left: 865px;
+}
+.game-labirint #marker3.cell1 {
+    top: 400px;
+    left: 860px;
+}
+.game-labirint #marker4.cell1 {
+    top: 410px;
+    left: 855px;
+}
+
+.game-labirint #marker1.cell2 {
+    top: 410px;
+    left: 780px;
+}
+.game-labirint #marker2.cell2 {
+    top: 420px;
+    left: 775px;
+}
+.game-labirint #marker3.cell2 {
+    top: 430px;
+    left: 770px;
+}
+.game-labirint #marker4.cell2 {
+    top: 440px;
+    left: 765px;
+}
+
+.game-labirint #marker1.cell3 {
+    top: 420px;
+    left: 720px;
+}
+.game-labirint #marker2.cell3 {
+    top: 430px;
+    left: 715px;
+}
+.game-labirint #marker3.cell3 {
+    top: 440px;
+    left: 710px;
+}
+.game-labirint #marker4.cell3 {
+    top: 450px;
+    left: 705px;
+}
+
+.game-labirint #marker1.cell4 {
+    top: 430px;
+    left: 660px;
+}
+.game-labirint #marker2.cell4 {
+    top: 440px;
+    left: 655px;
+}
+.game-labirint #marker3.cell4 {
+    top: 450px;
+    left: 650px;
+}
+.game-labirint #marker4.cell4 {
+    top: 460px;
+    left: 645px;
+}
+
+.game-labirint #marker1.cell5 {
+    top: 430px;
+    left: 600px;
+}
+.game-labirint #marker2.cell5 {
+    top: 440px;
+    left: 595px;
+}
+.game-labirint #marker3.cell5 {
+    top: 450px;
+    left: 590px;
+}
+.game-labirint #marker4.cell5 {
+    top: 460px;
+    left: 585px;
+}
+
+.game-labirint #marker1.cell6 {
+    top: 430px;
+    left: 545px;
+}
+.game-labirint #marker2.cell6 {
+    top: 440px;
+    left: 540px;
+}
+.game-labirint #marker3.cell6 {
+    top: 450px;
+    left: 535px;
+}
+.game-labirint #marker4.cell6 {
+    top: 460px;
+    left: 530px;
+}
+
+.game-labirint #marker1.cell7 {
+    top: 430px;
+    left: 485px;
+}
+.game-labirint #marker2.cell7 {
+    top: 440px;
+    left: 480px;
+}
+.game-labirint #marker3.cell7 {
+    top: 450px;
+    left: 475px;
+}
+.game-labirint #marker4.cell7 {
+    top: 460px;
+    left: 470px;
+}
+
+.game-labirint #marker1.cell8 {
+    top: 430px;
+    left: 425px;
+}
+.game-labirint #marker2.cell8 {
+    top: 440px;
+    left: 420px;
+}
+.game-labirint #marker3.cell8 {
+    top: 450px;
+    left: 415px;
+}
+.game-labirint #marker4.cell8 {
+    top: 460px;
+    left: 410px;
+}
+
+.game-labirint #marker1.cell9 {
+    top: 430px;
+    left: 365px;
+}
+.game-labirint #marker2.cell9 {
+    top: 440px;
+    left: 360px;
+}
+.game-labirint #marker3.cell9 {
+    top: 450px;
+    left: 355px;
+}
+.game-labirint #marker4.cell9 {
+    top: 460px;
+    left: 350px;
+}
+
+.game-labirint #marker1.cell10 {
+    top: 430px;
+    left: 305px;
+}
+.game-labirint #marker2.cell10 {
+    top: 440px;
+    left: 300px;
+}
+.game-labirint #marker3.cell10 {
+    top: 450px;
+    left: 295px;
+}
+.game-labirint #marker4.cell10 {
+    top: 460px;
+    left: 290px;
+}
+
+.game-labirint #marker1.cell11 {
+    top: 430px;
+    left: 250px;
+}
+.game-labirint #marker2.cell11 {
+    top: 440px;
+    left: 245px;
+}
+.game-labirint #marker3.cell11 {
+    top: 450px;
+    left: 240px;
+}
+.game-labirint #marker4.cell11 {
+    top: 460px;
+    left: 235px;
+}
+
+.game-labirint #marker1.cell12 {
+    top: 430px;
+    left: 190px;
+}
+.game-labirint #marker2.cell12 {
+    top: 440px;
+    left: 185px;
+}
+.game-labirint #marker3.cell12 {
+    top: 450px;
+    left: 180px;
+}
+.game-labirint #marker4.cell12 {
+    top: 460px;
+    left: 175px;
+}
+
+.game-labirint #marker1.cell13 {
+    top: 425px;
+    left: 130px;
+}
+.game-labirint #marker2.cell13 {
+    top: 435px;
+    left: 125px;
+}
+.game-labirint #marker3.cell13 {
+    top: 445px;
+    left: 120px;
+}
+.game-labirint #marker4.cell13 {
+    top: 455px;
+    left: 115px;
+}
+
+.game-labirint #marker1.cell14 {
+    top: 410px;
+    left: 60px;
+}
+.game-labirint #marker2.cell14 {
+    top: 420px;
+    left: 65px;
+}
+.game-labirint #marker3.cell14 {
+    top: 430px;
+    left: 70px;
+}
+.game-labirint #marker4.cell14 {
+    top: 440px;
+    left: 75px;
+}
+
+.game-labirint #marker1.cell15 {
+    top: 360px;
+    left: 40px;
+}
+.game-labirint #marker2.cell15 {
+    top: 370px;
+    left: 50px;
+}
+.game-labirint #marker3.cell15 {
+    top: 380px;
+    left: 60px;
+}
+.game-labirint #marker4.cell15 {
+    top: 390px;
+    left: 70px;
+}
+
+.game-labirint #marker1.cell16 {
+    top: 360px;
+    left: 110px;
+}
+.game-labirint #marker2.cell16 {
+    top: 370px;
+    left: 120px;
+}
+.game-labirint #marker3.cell16 {
+    top: 380px;
+    left: 130px;
+}
+.game-labirint #marker4.cell16 {
+    top: 390px;
+    left: 140px;
+}
+
+.game-labirint #marker1.cell17 {
+    top: 360px;
+    left: 175px;
+}
+.game-labirint #marker2.cell17 {
+    top: 370px;
+    left: 180px;
+}
+.game-labirint #marker3.cell17 {
+    top: 380px;
+    left: 185px;
+}
+.game-labirint #marker4.cell17 {
+    top: 390px;
+    left: 190px;
+}
+
+.game-labirint #marker1.cell18 {
+    top: 360px;
+    left: 230px;
+}
+.game-labirint #marker2.cell18 {
+    top: 370px;
+    left: 235px;
+}
+.game-labirint #marker3.cell18 {
+    top: 380px;
+    left: 240px;
+}
+.game-labirint #marker4.cell18 {
+    top: 390px;
+    left: 245px;
+}
+
+.game-labirint #marker1.cell19 {
+    top: 360px;
+    left: 290px;
+}
+.game-labirint #marker2.cell19 {
+    top: 370px;
+    left: 295px;
+}
+.game-labirint #marker3.cell19 {
+    top: 380px;
+    left: 300px;
+}
+.game-labirint #marker4.cell19 {
+    top: 390px;
+    left: 305px;
+}
+
+.game-labirint #marker1.cell20 {
+    top: 360px;
+    left: 355px;
+}
+.game-labirint #marker2.cell20 {
+    top: 370px;
+    left: 360px;
+}
+.game-labirint #marker3.cell20 {
+    top: 380px;
+    left: 365px;
+}
+.game-labirint #marker4.cell20 {
+    top: 390px;
+    left: 370px;
+}
+
+.game-labirint #marker1.cell21 {
+    top: 360px;
+    left: 415px;
+}
+.game-labirint #marker2.cell21 {
+    top: 370px;
+    left: 420px;
+}
+.game-labirint #marker3.cell21 {
+    top: 380px;
+    left: 425px;
+}
+.game-labirint #marker4.cell21 {
+    top: 390px;
+    left: 430px;
+}
+
+.game-labirint #marker1.cell22 {
+    top: 360px;
+    left: 465px;
+}
+.game-labirint #marker2.cell22 {
+    top: 370px;
+    left: 470px;
+}
+.game-labirint #marker3.cell22 {
+    top: 380px;
+    left: 475px;
+}
+.game-labirint #marker4.cell22 {
+    top: 390px;
+    left: 480px;
+}
+
+.game-labirint #marker1.cell23 {
+    top: 360px;
+    left: 520px;
+}
+.game-labirint #marker2.cell23 {
+    top: 370px;
+    left: 525px;
+}
+.game-labirint #marker3.cell23 {
+    top: 380px;
+    left: 530px;
+}
+.game-labirint #marker4.cell23 {
+    top: 390px;
+    left: 535px;
+}
+
+.game-labirint #marker1.cell24 {
+    top: 360px;
+    left: 580px;
+}
+.game-labirint #marker2.cell24 {
+    top: 370px;
+    left: 585px;
+}
+.game-labirint #marker3.cell24 {
+    top: 380px;
+    left: 590px;
+}
+.game-labirint #marker4.cell24 {
+    top: 390px;
+    left: 595px;
+}
+
+.game-labirint #marker1.cell25 {
+    top: 360px;
+    left: 640px;
+}
+.game-labirint #marker2.cell25 {
+    top: 370px;
+    left: 645px;
+}
+.game-labirint #marker3.cell25 {
+    top: 380px;
+    left: 650px;
+}
+.game-labirint #marker4.cell25 {
+    top: 390px;
+    left: 655px;
+}
+
+.game-labirint #marker1.cell26 {
+    top: 360px;
+    left: 695px;
+}
+.game-labirint #marker2.cell26 {
+    top: 370px;
+    left: 700px;
+}
+.game-labirint #marker3.cell26 {
+    top: 380px;
+    left: 705px;
+}
+.game-labirint #marker4.cell26 {
+    top: 390px;
+    left: 710px;
+}
+
+.game-labirint #marker1.cell27 {
+    top: 360px;
+    left: 755px;
+}
+.game-labirint #marker2.cell27 {
+    top: 370px;
+    left: 760px;
+}
+.game-labirint #marker3.cell27 {
+    top: 380px;
+    left: 765px;
+}
+.game-labirint #marker4.cell27 {
+    top: 390px;
+    left: 770px;
+}
+
+.game-labirint #marker1.cell28 {
+    top: 355px;
+    left: 845px;
+}
+.game-labirint #marker2.cell28 {
+    top: 365px;
+    left: 835px;
+}
+.game-labirint #marker3.cell28 {
+    top: 375px;
+    left: 825px;
+}
+.game-labirint #marker4.cell28 {
+    top: 385px;
+    left: 815px;
+}
+
+.game-labirint #marker1.cell29 {
+    top: 310px;
+    left: 895px;
+}
+.game-labirint #marker2.cell29 {
+    top: 315px;
+    left: 890px;
+}
+.game-labirint #marker3.cell29 {
+    top: 320px;
+    left: 885px;
+}
+.game-labirint #marker4.cell29 {
+    top: 325px;
+    left: 880px;
+}
+
+.game-labirint #marker1.cell30 {
+    top: 310px;
+    left: 835px;
+}
+.game-labirint #marker2.cell30 {
+    top: 315px;
+    left: 830px;
+}
+.game-labirint #marker3.cell30 {
+    top: 320px;
+    left: 825px;
+}
+.game-labirint #marker4.cell30 {
+    top: 325px;
+    left: 820px;
+}
+
+.game-labirint #marker1.cell31 {
+    top: 310px;
+    left: 775px;
+}
+.game-labirint #marker2.cell31 {
+    top: 315px;
+    left: 770px;
+}
+.game-labirint #marker3.cell31 {
+    top: 320px;
+    left: 765px;
+}
+.game-labirint #marker4.cell31 {
+    top: 325px;
+    left: 760px;
+}
+
+.game-labirint #marker1.cell32 {
+    top: 310px;
+    left: 715px;
+}
+.game-labirint #marker2.cell32 {
+    top: 315px;
+    left: 710px;
+}
+.game-labirint #marker3.cell32 {
+    top: 320px;
+    left: 705px;
+}
+.game-labirint #marker4.cell32 {
+    top: 325px;
+    left: 700px;
+}
+
+.game-labirint #marker1.cell33 {
+    top: 310px;
+    left: 660px;
+}
+.game-labirint #marker2.cell33 {
+    top: 315px;
+    left: 655px;
+}
+.game-labirint #marker3.cell33 {
+    top: 320px;
+    left: 650px;
+}
+.game-labirint #marker4.cell33 {
+    top: 325px;
+    left: 645px;
+}
+
+.game-labirint #marker1.cell34 {
+    top: 310px;
+    left: 600px;
+}
+.game-labirint #marker2.cell34 {
+    top: 315px;
+    left: 595px;
+}
+.game-labirint #marker3.cell34 {
+    top: 320px;
+    left: 590px;
+}
+.game-labirint #marker4.cell34 {
+    top: 325px;
+    left: 585px;
+}
+
+.game-labirint #marker1.cell35 {
+    top: 310px;
+    left: 540px;
+}
+.game-labirint #marker2.cell35 {
+    top: 315px;
+    left: 535px;
+}
+.game-labirint #marker3.cell35 {
+    top: 320px;
+    left: 530px;
+}
+.game-labirint #marker4.cell35 {
+    top: 325px;
+    left: 525px;
+}
+
+.game-labirint #marker1.cell36 {
+    top: 310px;
+    left: 480px;
+}
+.game-labirint #marker2.cell36 {
+    top: 315px;
+    left: 475px;
+}
+.game-labirint #marker3.cell36 {
+    top: 320px;
+    left: 470px;
+}
+.game-labirint #marker4.cell36 {
+    top: 325px;
+    left: 465px;
+}
+
+.game-labirint #marker1.cell37 {
+    top: 310px;
+    left: 425px;
+}
+.game-labirint #marker2.cell37 {
+    top: 315px;
+    left: 420px;
+}
+.game-labirint #marker3.cell37 {
+    top: 320px;
+    left: 415px;
+}
+.game-labirint #marker4.cell37 {
+    top: 325px;
+    left: 410px;
+}
+
+.game-labirint #marker1.cell38 {
+    top: 310px;
+    left: 365px;
+}
+.game-labirint #marker2.cell38 {
+    top: 315px;
+    left: 360px;
+}
+.game-labirint #marker3.cell38 {
+    top: 320px;
+    left: 355px;
+}
+.game-labirint #marker4.cell38 {
+    top: 325px;
+    left: 350px;
+}
+
+.game-labirint #marker1.cell39 {
+    top: 310px;
+    left: 310px;
+}
+.game-labirint #marker2.cell39 {
+    top: 315px;
+    left: 305px;
+}
+.game-labirint #marker3.cell39 {
+    top: 320px;
+    left: 300px;
+}
+.game-labirint #marker4.cell39 {
+    top: 325px;
+    left: 295px;
+}
+
+.game-labirint #marker1.cell40 {
+    top: 310px;
+    left: 255px;
+}
+.game-labirint #marker2.cell40 {
+    top: 315px;
+    left: 250px;
+}
+.game-labirint #marker3.cell40 {
+    top: 320px;
+    left: 245px;
+}
+.game-labirint #marker4.cell40 {
+    top: 325px;
+    left: 240px;
+}
+
+.game-labirint #marker1.cell41 {
+    top: 310px;
+    left: 200px;
+}
+.game-labirint #marker2.cell41 {
+    top: 315px;
+    left: 195px;
+}
+.game-labirint #marker3.cell41 {
+    top: 320px;
+    left: 190px;
+}
+.game-labirint #marker4.cell41 {
+    top: 325px;
+    left: 185px;
+}
+
+.game-labirint #marker1.cell42 {
+    top: 310px;
+    left: 130px;
+}
+.game-labirint #marker2.cell42 {
+    top: 315px;
+    left: 125px;
+}
+.game-labirint #marker3.cell42 {
+    top: 320px;
+    left: 120px;
+}
+.game-labirint #marker4.cell42 {
+    top: 325px;
+    left: 115px;
+}
+
+.game-labirint #marker1.cell43 {
+    top: 310px;
+    left: 50px;
+}
+.game-labirint #marker2.cell43 {
+    top: 315px;
+    left: 55px;
+}
+.game-labirint #marker3.cell43 {
+    top: 320px;
+    left: 60px;
+}
+.game-labirint #marker4.cell43 {
+    top: 325px;
+    left: 65px;
+}
+
+.game-labirint #marker1.cell44 {
+    top: 250px;
+    left: 40px;
+}
+.game-labirint #marker2.cell44 {
+    top: 255px;
+    left: 45px;
+}
+.game-labirint #marker3.cell44 {
+    top: 260px;
+    left: 50px;
+}
+.game-labirint #marker4.cell44 {
+    top: 265px;
+    left: 55px;
+}
+
+.game-labirint #marker1.cell45 {
+    top: 250px;
+    left: 115px;
+}
+.game-labirint #marker2.cell45 {
+    top: 255px;
+    left: 120px;
+}
+.game-labirint #marker3.cell45 {
+    top: 260px;
+    left: 125px;
+}
+.game-labirint #marker4.cell45 {
+    top: 265px;
+    left: 130px;
+}
+
+.game-labirint #marker1.cell46 {
+    top: 250px;
+    left: 175px;
+}
+.game-labirint #marker2.cell46 {
+    top: 255px;
+    left: 180px;
+}
+.game-labirint #marker3.cell46 {
+    top: 260px;
+    left: 185px;
+}
+.game-labirint #marker4.cell46 {
+    top: 265px;
+    left: 190px;
+}
+
+.game-labirint #marker1.cell47 {
+    top: 250px;
+    left: 235px;
+}
+.game-labirint #marker2.cell47 {
+    top: 255px;
+    left: 240px;
+}
+.game-labirint #marker3.cell47 {
+    top: 260px;
+    left: 245px;
+}
+.game-labirint #marker4.cell47 {
+    top: 265px;
+    left: 250px;
+}
+
+.game-labirint #marker1.cell48 {
+    top: 250px;
+    left: 290px;
+}
+.game-labirint #marker2.cell48 {
+    top: 255px;
+    left: 295px;
+}
+.game-labirint #marker3.cell48 {
+    top: 260px;
+    left: 300px;
+}
+.game-labirint #marker4.cell48 {
+    top: 265px;
+    left: 305px;
+}
+
+.game-labirint #marker1.cell49 {
+    top: 250px;
+    left: 355px;
+}
+.game-labirint #marker2.cell49 {
+    top: 255px;
+    left: 360px;
+}
+.game-labirint #marker3.cell49 {
+    top: 260px;
+    left: 365px;
+}
+.game-labirint #marker4.cell49 {
+    top: 265px;
+    left: 370px;
+}
+
+.game-labirint #marker1.cell50 {
+    top: 250px;
+    left: 415px;
+}
+.game-labirint #marker2.cell50 {
+    top: 255px;
+    left: 420px;
+}
+.game-labirint #marker3.cell50 {
+    top: 260px;
+    left: 425px;
+}
+.game-labirint #marker4.cell50 {
+    top: 265px;
+    left: 430px;
+}
+
+.game-labirint #marker1.cell51 {
+    top: 250px;
+    left: 475px;
+}
+.game-labirint #marker2.cell51 {
+    top: 255px;
+    left: 480px;
+}
+.game-labirint #marker3.cell51 {
+    top: 260px;
+    left: 485px;
+}
+.game-labirint #marker4.cell51 {
+    top: 265px;
+    left: 490px;
+}
+
+.game-labirint #marker1.cell52 {
+    top: 250px;
+    left: 535px;
+}
+.game-labirint #marker2.cell52 {
+    top: 255px;
+    left: 540px;
+}
+.game-labirint #marker3.cell52 {
+    top: 260px;
+    left: 545px;
+}
+.game-labirint #marker4.cell52 {
+    top: 265px;
+    left: 550px;
+}
+
+.game-labirint #marker1.cell53 {
+    top: 250px;
+    left: 595px;
+}
+.game-labirint #marker2.cell53 {
+    top: 255px;
+    left: 600px;
+}
+.game-labirint #marker3.cell53 {
+    top: 260px;
+    left: 605px;
+}
+.game-labirint #marker4.cell53 {
+    top: 265px;
+    left: 610px;
+}
+
+.game-labirint #marker1.cell54 {
+    top: 250px;
+    left: 650px;
+}
+.game-labirint #marker2.cell54 {
+    top: 255px;
+    left: 655px;
+}
+.game-labirint #marker3.cell54 {
+    top: 260px;
+    left: 660px;
+}
+.game-labirint #marker4.cell54 {
+    top: 265px;
+    left: 665px;
+}
+
+.game-labirint #marker1.cell55 {
+    top: 250px;
+    left: 705px;
+}
+.game-labirint #marker2.cell55 {
+    top: 255px;
+    left: 710px;
+}
+.game-labirint #marker3.cell55 {
+    top: 260px;
+    left: 715px;
+}
+.game-labirint #marker4.cell55 {
+    top: 265px;
+    left: 720px;
+}
+
+.game-labirint #marker1.cell56 {
+    top: 250px;
+    left: 760px;
+}
+.game-labirint #marker2.cell56 {
+    top: 255px;
+    left: 765px;
+}
+.game-labirint #marker3.cell56 {
+    top: 260px;
+    left: 770px;
+}
+.game-labirint #marker4.cell56 {
+    top: 265px;
+    left: 775px;
+}
+
+.game-labirint #marker1.cell57 {
+    top: 250px;
+    left: 815px;
+}
+.game-labirint #marker2.cell57 {
+    top: 255px;
+    left: 820px;
+}
+.game-labirint #marker3.cell57 {
+    top: 260px;
+    left: 825px;
+}
+.game-labirint #marker4.cell57 {
+    top: 265px;
+    left: 830px;
+}
+
+.game-labirint #marker1.cell58 {
+    top: 250px;
+    left: 900px;
+}
+.game-labirint #marker2.cell58 {
+    top: 255px;
+    left: 895px;
+}
+.game-labirint #marker3.cell58 {
+    top: 260px;
+    left: 890px;
+}
+.game-labirint #marker4.cell58 {
+    top: 265px;
+    left: 885px;
+}
+
+.game-labirint #marker1.cell59 {
+    top: 190px;
+    left: 900px;
+}
+.game-labirint #marker2.cell59 {
+    top: 195px;
+    left: 895px;
+}
+.game-labirint #marker3.cell59 {
+    top: 200px;
+    left: 890px;
+}
+.game-labirint #marker4.cell59 {
+    top: 205px;
+    left: 885px;
+}
+
+.game-labirint #marker1.cell60 {
+    top: 190px;
+    left: 835px;
+}
+.game-labirint #marker2.cell60 {
+    top: 195px;
+    left: 830px;
+}
+.game-labirint #marker3.cell60 {
+    top: 200px;
+    left: 825px;
+}
+.game-labirint #marker4.cell60 {
+    top: 205px;
+    left: 820px;
+}
+
+.game-labirint #marker1.cell61 {
+    top: 190px;
+    left: 780px;
+}
+.game-labirint #marker2.cell61 {
+    top: 195px;
+    left: 775px;
+}
+.game-labirint #marker3.cell61 {
+    top: 200px;
+    left: 770px;
+}
+.game-labirint #marker4.cell61 {
+    top: 205px;
+    left: 765px;
+}
+
+.game-labirint #marker1.cell62 {
+    top: 195px;
+    left: 720px;
+}
+.game-labirint #marker2.cell62 {
+    top: 200px;
+    left: 715px;
+}
+.game-labirint #marker3.cell62 {
+    top: 205px;
+    left: 710px;
+}
+.game-labirint #marker4.cell62 {
+    top: 210px;
+    left: 705px;
+}
+
+.game-labirint #marker1.cell63 {
+    top: 195px;
+    left: 660px;
+}
+.game-labirint #marker2.cell63 {
+    top: 200px;
+    left: 655px;
+}
+.game-labirint #marker3.cell63 {
+    top: 205px;
+    left: 650px;
+}
+.game-labirint #marker4.cell63 {
+    top: 210px;
+    left: 645px;
+}
+
+.game-labirint #marker1.cell64 {
+    top: 195px;
+    left: 600px;
+}
+.game-labirint #marker2.cell64 {
+    top: 200px;
+    left: 595px;
+}
+.game-labirint #marker3.cell64 {
+    top: 205px;
+    left: 590px;
+}
+.game-labirint #marker4.cell64 {
+    top: 210px;
+    left: 585px;
+}
+
+.game-labirint #marker1.cell65 {
+    top: 195px;
+    left: 540px;
+}
+.game-labirint #marker2.cell65 {
+    top: 200px;
+    left: 535px;
+}
+.game-labirint #marker3.cell65 {
+    top: 205px;
+    left: 530px;
+}
+.game-labirint #marker4.cell65 {
+    top: 210px;
+    left: 525px;
+}
+
+.game-labirint #marker1.cell66 {
+    top: 195px;
+    left: 480px;
+}
+.game-labirint #marker2.cell66 {
+    top: 200px;
+    left: 475px;
+}
+.game-labirint #marker3.cell66 {
+    top: 205px;
+    left: 470px;
+}
+.game-labirint #marker4.cell66 {
+    top: 210px;
+    left: 465px;
+}
+
+.game-labirint #marker1.cell67 {
+    top: 195px;
+    left: 420px;
+}
+.game-labirint #marker2.cell67 {
+    top: 200px;
+    left: 415px;
+}
+.game-labirint #marker3.cell67 {
+    top: 205px;
+    left: 410px;
+}
+.game-labirint #marker4.cell67 {
+    top: 210px;
+    left: 405px;
+}
+
+.game-labirint #marker1.cell68 {
+    top: 195px;
+    left: 360px;
+}
+.game-labirint #marker2.cell68 {
+    top: 200px;
+    left: 355px;
+}
+.game-labirint #marker3.cell68 {
+    top: 205px;
+    left: 350px;
+}
+.game-labirint #marker4.cell68 {
+    top: 210px;
+    left: 345px;
+}
+
+.game-labirint #marker1.cell69 {
+    top: 195px;
+    left: 305px;
+}
+.game-labirint #marker2.cell69 {
+    top: 200px;
+    left: 300px;
+}
+.game-labirint #marker3.cell69 {
+    top: 205px;
+    left: 295px;
+}
+.game-labirint #marker4.cell69 {
+    top: 210px;
+    left: 290px;
+}
+
+.game-labirint #marker1.cell70 {
+    top: 195px;
+    left: 250px;
+}
+.game-labirint #marker2.cell70 {
+    top: 200px;
+    left: 245px;
+}
+.game-labirint #marker3.cell70 {
+    top: 205px;
+    left: 240px;
+}
+.game-labirint #marker4.cell70 {
+    top: 210px;
+    left: 235px;
+}
+
+.game-labirint #marker1.cell71 {
+    top: 195px;
+    left: 185px;
+}
+.game-labirint #marker2.cell71 {
+    top: 200px;
+    left: 180px;
+}
+.game-labirint #marker3.cell71 {
+    top: 205px;
+    left: 175px;
+}
+.game-labirint #marker4.cell71 {
+    top: 210px;
+    left: 170px;
+}
+
+.game-labirint #marker1.cell72 {
+    top: 195px;
+    left: 125px;
+}
+.game-labirint #marker2.cell72 {
+    top: 200px;
+    left: 120px;
+}
+.game-labirint #marker3.cell72 {
+    top: 205px;
+    left: 115px;
+}
+.game-labirint #marker4.cell72 {
+    top: 210px;
+    left: 110px;
+}
+
+.game-labirint #marker1.cell73 {
+    top: 195px;
+    left: 50px;
+}
+.game-labirint #marker2.cell73 {
+    top: 200px;
+    left: 55px;
+}
+.game-labirint #marker3.cell73 {
+    top: 205px;
+    left: 60px;
+}
+.game-labirint #marker4.cell73 {
+    top: 210px;
+    left: 65px;
+}
+
+.game-labirint #marker1.cell74 {
+    top: 125px;
+    left: 50px;
+}
+.game-labirint #marker2.cell74 {
+    top: 130px;
+    left: 55px;
+}
+.game-labirint #marker3.cell74 {
+    top: 135px;
+    left: 60px;
+}
+.game-labirint #marker4.cell74 {
+    top: 140px;
+    left: 65px;
+}
+
+.game-labirint #marker1.cell75 {
+    top: 125px;
+    left: 135px;
+}
+.game-labirint #marker2.cell75 {
+    top: 130px;
+    left: 140px;
+}
+.game-labirint #marker3.cell75 {
+    top: 135px;
+    left: 145px;
+}
+.game-labirint #marker4.cell75 {
+    top: 140px;
+    left: 150px;
+}
+
+.game-labirint #marker1.cell76 {
+    top: 135px;
+    left: 195px;
+}
+.game-labirint #marker2.cell76 {
+    top: 140px;
+    left: 200px;
+}
+.game-labirint #marker3.cell76 {
+    top: 145px;
+    left: 205px;
+}
+.game-labirint #marker4.cell76 {
+    top: 150px;
+    left: 210px;
+}
+
+.game-labirint #marker1.cell77 {
+    top: 140px;
+    left: 250px;
+}
+.game-labirint #marker2.cell77 {
+    top: 145px;
+    left: 255px;
+}
+.game-labirint #marker3.cell77 {
+    top: 150px;
+    left: 260px;
+}
+.game-labirint #marker4.cell77 {
+    top: 155px;
+    left: 265px;
+}
+
+.game-labirint #marker1.cell78 {
+    top: 140px;
+    left: 305px;
+}
+.game-labirint #marker2.cell78 {
+    top: 145px;
+    left: 310px;
+}
+.game-labirint #marker3.cell78 {
+    top: 150px;
+    left: 315px;
+}
+.game-labirint #marker4.cell78 {
+    top: 155px;
+    left: 320px;
+}
+
+.game-labirint #marker1.cell79 {
+    top: 140px;
+    left: 360px;
+}
+.game-labirint #marker2.cell79 {
+    top: 145px;
+    left: 365px;
+}
+.game-labirint #marker3.cell79 {
+    top: 150px;
+    left: 370px;
+}
+.game-labirint #marker4.cell79 {
+    top: 155px;
+    left: 375px;
+}
+
+.game-labirint #marker1.cell80 {
+    top: 140px;
+    left: 410px;
+}
+.game-labirint #marker2.cell80 {
+    top: 145px;
+    left: 415px;
+}
+.game-labirint #marker3.cell80 {
+    top: 150px;
+    left: 420px;
+}
+.game-labirint #marker4.cell80 {
+    top: 155px;
+    left: 425px;
+}
+
+.game-labirint #marker1.cell81 {
+    top: 140px;
+    left: 480px;
+}
+.game-labirint #marker2.cell81 {
+    top: 145px;
+    left: 485px;
+}
+.game-labirint #marker3.cell81 {
+    top: 150px;
+    left: 490px;
+}
+.game-labirint #marker4.cell81 {
+    top: 155px;
+    left: 495px;
+}
+
+.game-labirint #marker1.cell82 {
+    top: 140px;
+    left: 535px;
+}
+.game-labirint #marker2.cell82 {
+    top: 145px;
+    left: 540px;
+}
+.game-labirint #marker3.cell82 {
+    top: 150px;
+    left: 545px;
+}
+.game-labirint #marker4.cell82 {
+    top: 155px;
+    left: 550px;
+}
+
+.game-labirint #marker1.cell83 {
+    top: 145px;
+    left: 590px;
+}
+.game-labirint #marker2.cell83 {
+    top: 150px;
+    left: 595px;
+}
+.game-labirint #marker3.cell83 {
+    top: 155px;
+    left: 600px;
+}
+.game-labirint #marker4.cell83 {
+    top: 160px;
+    left: 605px;
+}
+
+.game-labirint #marker1.cell84 {
+    top: 145px;
+    left: 645px;
+}
+.game-labirint #marker2.cell84 {
+    top: 150px;
+    left: 650px;
+}
+.game-labirint #marker3.cell84 {
+    top: 155px;
+    left: 655px;
+}
+.game-labirint #marker4.cell84 {
+    top: 160px;
+    left: 660px;
+}
+
+.game-labirint #marker1.cell85 {
+    top: 145px;
+    left: 695px;
+}
+.game-labirint #marker2.cell85 {
+    top: 150px;
+    left: 700px;
+}
+.game-labirint #marker3.cell85 {
+    top: 155px;
+    left: 705px;
+}
+.game-labirint #marker4.cell85 {
+    top: 160px;
+    left: 710px;
+}
+
+.game-labirint #marker1.cell86 {
+    top: 145px;
+    left: 750px;
+}
+.game-labirint #marker2.cell86 {
+    top: 150px;
+    left: 755px;
+}
+.game-labirint #marker3.cell86 {
+    top: 155px;
+    left: 760px;
+}
+.game-labirint #marker4.cell86 {
+    top: 160px;
+    left: 765px;
+}
+
+.game-labirint #marker1.cell87 {
+    top: 145px;
+    left: 810px;
+}
+.game-labirint #marker2.cell87 {
+    top: 150px;
+    left: 815px;
+}
+.game-labirint #marker3.cell87 {
+    top: 155px;
+    left: 820px;
+}
+.game-labirint #marker4.cell87 {
+    top: 160px;
+    left: 825px;
+}
+
+.game-labirint #marker1.cell88 {
+    top: 145px;
+    left: 900px;
+}
+.game-labirint #marker2.cell88 {
+    top: 150px;
+    left: 895px;
+}
+.game-labirint #marker3.cell88 {
+    top: 155px;
+    left: 890px;
+}
+.game-labirint #marker4.cell88 {
+    top: 160px;
+    left: 885px;
+}
+
+.game-labirint #marker1.cell89 {
+    top: 95px;
+    left: 900px;
+}
+.game-labirint #marker2.cell89 {
+    top: 100px;
+    left: 895px;
+}
+.game-labirint #marker3.cell89 {
+    top: 105px;
+    left: 890px;
+}
+.game-labirint #marker4.cell89 {
+    top: 110px;
+    left: 885px;
+}
+
+.game-labirint #marker1.cell90 {
+    top: 95px;
+    left: 835px;
+}
+.game-labirint #marker2.cell90 {
+    top: 100px;
+    left: 830px;
+}
+.game-labirint #marker3.cell90 {
+    top: 105px;
+    left: 825px;
+}
+.game-labirint #marker4.cell90 {
+    top: 110px;
+    left: 820px;
+}
+
+.game-labirint #marker1.cell91 {
+    top: 95px;
+    left: 775px;
+}
+.game-labirint #marker2.cell91 {
+    top: 100px;
+    left: 770px;
+}
+.game-labirint #marker3.cell91 {
+    top: 105px;
+    left: 765px;
+}
+.game-labirint #marker4.cell91 {
+    top: 110px;
+    left: 760px;
+}
+
+.game-labirint #marker1.cell92 {
+    top: 95px;
+    left: 720px;
+}
+.game-labirint #marker2.cell92 {
+    top: 100px;
+    left: 715px;
+}
+.game-labirint #marker3.cell92 {
+    top: 105px;
+    left: 710px;
+}
+.game-labirint #marker4.cell92 {
+    top: 110px;
+    left: 705px;
+}
+
+.game-labirint #marker1.cell93 {
+    top: 95px;
+    left: 660px;
+}
+.game-labirint #marker2.cell93 {
+    top: 100px;
+    left: 655px;
+}
+.game-labirint #marker3.cell93 {
+    top: 105px;
+    left: 650px;
+}
+.game-labirint #marker4.cell93 {
+    top: 110px;
+    left: 645px;
+}
+
+.game-labirint #marker1.cell94 {
+    top: 95px;
+    left: 585px;
+}
+.game-labirint #marker2.cell94 {
+    top: 100px;
+    left: 590px;
+}
+.game-labirint #marker3.cell94 {
+    top: 105px;
+    left: 595px;
+}
+.game-labirint #marker4.cell94 {
+    top: 110px;
+    left: 600px;
+}
+
+.game-labirint #marker1.cell95 {
+    top: 55px;
+    left: 600px;
+}
+.game-labirint #marker2.cell95 {
+    top: 60px;
+    left: 595px;
+}
+.game-labirint #marker3.cell95 {
+    top: 65px;
+    left: 590px;
+}
+.game-labirint #marker4.cell95 {
+    top: 70px;
+    left: 585px;
+}
+
+.game-labirint #marker1.cell96 {
+    top: 55px;
+    left: 660px;
+}
+.game-labirint #marker2.cell96 {
+    top: 60px;
+    left: 655px;
+}
+.game-labirint #marker3.cell96 {
+    top: 65px;
+    left: 650px;
+}
+.game-labirint #marker4.cell96 {
+    top: 70px;
+    left: 645px;
+}
+
+.game-labirint #marker1.cell97 {
+    top: 50px;
+    left: 720px;
+}
+.game-labirint #marker2.cell97 {
+    top: 55px;
+    left: 715px;
+}
+.game-labirint #marker3.cell97 {
+    top: 60px;
+    left: 710px;
+}
+.game-labirint #marker4.cell97 {
+    top: 65px;
+    left: 705px;
+}
+
+.game-labirint #marker1.cell98 {
+    top: 40px;
+    left: 780px;
+}
+.game-labirint #marker2.cell98 {
+    top: 45px;
+    left: 775px;
+}
+.game-labirint #marker3.cell98 {
+    top: 50px;
+    left: 770px;
+}
+.game-labirint #marker4.cell98 {
+    top: 55px;
+    left: 765px;
+}
+
+.game-labirint #marker1.cell99 {
+    top: 40px;
+    left: 835px;
+}
+.game-labirint #marker2.cell99 {
+    top: 45px;
+    left: 830px;
+}
+.game-labirint #marker3.cell99 {
+    top: 50px;
+    left: 825px;
+}
+.game-labirint #marker4.cell99 {
+    top: 55px;
+    left: 820px;
+}
+
+/* new dices */
+.wrap{width:90px; height:90px; margin:10px auto 30px auto; position:relative}
+.dice{width:90px; height:90px; background:url('../img/labirint/dice.png') no-repeat; cursor: pointer; display: none}
+.dice_1{background-position:-5px -4px}
+.dice_2{background-position:-5px -107px}
+.dice_3{background-position:-5px -212px}
+.dice_4{background-position:-5px -317px}
+.dice_5{background-position:-5px -427px}
+.dice_6{background-position:-5px -535px}
+.dice_t{background-position:-5px -651px}
+.dice_s{background-position:-5px -763px}
+.dice_e{background-position:-5px -876px}
+p#result{text-align:center; font-size:16px}
+p#result span{font-weight:bold; color:#f30; margin:6px}
+#dice_mask{width:90px; height:90px; background:#fff; opacity:0; position:absolute;
+    top:0; left:0; z-index:999}
+
+/* end dices */
+
+
+
